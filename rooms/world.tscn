@@ -7,3 +7,4 @@ metadata/_edit_vertical_guides_ = [240.0]
 metadata/_edit_horizontal_guides_ = [240.0]
 
 [node name="Player" parent="." instance=ExtResource("1_suinh")]
+position = Vector2(240, 240)
