@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://bkig1lneax2p5"]
+[gd_scene load_steps=11 format=4 uid="uid://bkig1lneax2p5"]
 
 [ext_resource type="Script" uid="uid://cg10lq6x1vxjq" path="res://rooms/world.gd" id="1_3bx3o"]
 [ext_resource type="Texture2D" uid="uid://b48dxcfa1dncd" path="res://assets/heart.png" id="1_fy383"]
 [ext_resource type="PackedScene" uid="uid://bqu256p5qvuag" path="res://scenes/player.tscn" id="1_suinh"]
 [ext_resource type="Texture2D" uid="uid://c74j36itfswqj" path="res://assets/tileset.png" id="2_01vx5"]
 [ext_resource type="Texture2D" uid="uid://b08kkle366jnh" path="res://assets/heart-empty.png" id="2_qroda"]
+[ext_resource type="Texture2D" uid="uid://r40js83f4ndm" path="res://assets/inventory-frame.png" id="4_wllj5"]
 [ext_resource type="Texture2D" uid="uid://bjbgoy3hr2uq4" path="res://assets/cursor.png" id="6_jn7ig"]
 [ext_resource type="Script" uid="uid://c8d35flds5rem" path="res://rooms/cursor.gd" id="6_ytbqh"]
 
@@ -62,6 +63,56 @@ stretch_mode = 2
 layout_mode = 2
 size_flags_vertical = 4
 texture = ExtResource("2_qroda")
+stretch_mode = 2
+
+[node name="Inventory" type="HBoxContainer" parent="Canvas"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -240.0
+offset_top = -54.0
+offset_right = 240.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Canvas/Inventory"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("4_wllj5")
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="Canvas/Inventory"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("4_wllj5")
+stretch_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="Canvas/Inventory"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("4_wllj5")
+stretch_mode = 2
+
+[node name="TextureRect4" type="TextureRect" parent="Canvas/Inventory"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("4_wllj5")
+stretch_mode = 2
+
+[node name="TextureRect5" type="TextureRect" parent="Canvas/Inventory"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("4_wllj5")
+stretch_mode = 2
+
+[node name="TextureRect6" type="TextureRect" parent="Canvas/Inventory"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("4_wllj5")
 stretch_mode = 2
 
 [node name="Player" parent="." node_paths=PackedStringArray("tilemap") instance=ExtResource("1_suinh")]
