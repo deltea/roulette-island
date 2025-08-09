@@ -19,3 +19,7 @@ offset = Vector2(0, -3)
 [node name="CollisionShape" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_g2els")
+
+[node name="Camera" type="Camera2D" parent="."]
+ignore_rotation = false
+position_smoothing_enabled = true
